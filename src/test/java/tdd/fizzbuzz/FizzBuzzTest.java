@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class FizzBuzzTest {
     private static final String FIZZ = "Fizz";
     private static final String BUZZ = "Buzz";
-    private static final String WHIZ = "Whizz";
+    private static final String WHIZZ = "Whizz";
     private int num;
 
     @BeforeEach
@@ -35,16 +35,25 @@ public class FizzBuzzTest {
         num = 14;
 
         FizzBuzz fizzBuzz = new FizzBuzz();
-        assertEquals(WHIZ, fizzBuzz.sortOrderNumber(num));
+        assertEquals(WHIZZ, fizzBuzz.sortOrderNumber(num));
     }
 
     @Test
-    public void test_when_number_is_a_multiple_of_3_and_5() {
+    public void test_when_number_is_a_multiple_of_3_and_7() {
         num = 15;
 
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals(FIZZ+BUZZ, fizzBuzz.sortOrderNumber(num));
     }
+
+    @Test
+    public void test_when_number_is_a_multiple_of_3_and_5() {
+        num = 21;
+
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals(FIZZ+WHIZZ, fizzBuzz.sortOrderNumber(num));
+    }
+
 
 }
 

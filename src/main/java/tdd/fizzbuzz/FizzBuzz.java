@@ -18,8 +18,12 @@ public class FizzBuzz {
             return BUZZ;
         }
 
-        if(orderNumber % 7 == 0){
+        if(isModulo7){
             return WHIZZ;
+        }
+
+        if(isModulo3 && isModulo5){
+            return FIZZ+BUZZ;
         }
 
         return null;
