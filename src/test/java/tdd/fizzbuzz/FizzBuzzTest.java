@@ -54,6 +54,14 @@ public class FizzBuzzTest {
         assertEquals(FIZZ+WHIZZ, fizzBuzz.sortOrderNumber(num));
     }
 
+    @Test
+    public void test_when_number_is_a_multiple_of_5_and_7() {
+        num = 35;
+
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals(BUZZ+WHIZZ, fizzBuzz.sortOrderNumber(num));
+    }
+
 
 }
 
