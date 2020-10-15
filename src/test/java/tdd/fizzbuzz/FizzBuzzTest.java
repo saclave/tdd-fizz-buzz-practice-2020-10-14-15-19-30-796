@@ -70,8 +70,13 @@ public class FizzBuzzTest {
         assertEquals(FIZZ+BUZZ+WHIZZ, fizzBuzz.sortOrderNumber(num));
     }
 
+    @Test
+    public void test_when_number_is_not_a_multiple_of_3_5_and_7() {
+        num = 1;
 
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals(num, fizzBuzz.sortOrderNumber(num));
+    }
 
 }
 
-//multiple of 3 Fizz
