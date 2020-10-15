@@ -6,11 +6,15 @@ public class FizzBuzz {
     private static final String WHIZZ = "Whizz";
 
     public String sortOrderNumber(int orderNumber) {
-        if(orderNumber % 3 == 0){
+        boolean isModulo3 = orderNumber % 3 == 0;
+        boolean isModulo5 = orderNumber % 5 == 0;
+        boolean isModulo7 = orderNumber % 7 == 0;
+
+        if(isModulo3){
             return FIZZ;
         }
 
-        if(orderNumber % 5 == 0){
+        if(isModulo5){
             return BUZZ;
         }
 
