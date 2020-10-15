@@ -9,7 +9,7 @@ public class FizzBuzz {
             return FIZZ;
         }
 
-        if(orderNumber % 3 == 0){
+        if(orderNumber % 5 == 0){
             return BUZZ;
         }
         return null;
