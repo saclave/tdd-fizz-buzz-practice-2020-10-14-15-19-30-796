@@ -17,6 +17,7 @@ public class FizzBuzz {
         if(orderNumber % 7 == 0){
             return WHIZZ;
         }
+
         return null;
     }
 }

@@ -31,11 +31,19 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void test_when_number_is_a_multiple_of_4() {
+    public void test_when_number_is_a_multiple_of_7() {
         num = 14;
 
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals(WHIZ, fizzBuzz.sortOrderNumber(num));
+    }
+
+    @Test
+    public void test_when_number_is_a_multiple_of_3_and_5() {
+        num = 15;
+
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals(FIZZ+BUZZ, fizzBuzz.sortOrderNumber(num));
     }
 
 }
