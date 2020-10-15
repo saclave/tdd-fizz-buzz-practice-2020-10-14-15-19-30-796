@@ -4,38 +4,28 @@ import static tdd.fizzbuzz.Constants.*;
 
 public class FizzBuzz {
     public String sortOrderNumber(int orderNumber) {
-        boolean isModulo3 = orderNumber % 3 == 0;
-        boolean isModulo5 = orderNumber % 5 == 0;
-        boolean isModulo7 = orderNumber % 7 == 0;
+        String message = "";
 
-        if(isModulo3 && isModulo5 && isModulo7){
-            return FIZZ_BUZZ_WHIZZ;
+        if(isModuloBy(orderNumber, 3)){
+            message += FIZZ;
         }
 
-        if(isModulo3 && isModulo5){
-            return FIZZ_BUZZ;
+        if(isModuloBy(orderNumber, 5)){
+            message += BUZZ;
         }
 
-        if(isModulo3 && isModulo7){
-            return FIZZ_WHIZZ;
+        if(isModuloBy(orderNumber, 7)){
+            message += WHIZZ;
         }
 
-        if(isModulo5 && isModulo7){
-            return BUZZ_WHIZZ;
+        if(message.isEmpty()) {
+            message = String.valueOf(orderNumber);
         }
 
-        if(isModulo3){
-            return FIZZ;
-        }
+        return message;
+    }
 
-        if(isModulo5){
-            return BUZZ;
-        }
-
-        if(isModulo7){
-            return WHIZZ;
-        }
-
-        return String.valueOf(orderNumber);
+    private boolean isModuloBy(int orderNumber, int x) {
+        return orderNumber % x == 0;
     }
 }
