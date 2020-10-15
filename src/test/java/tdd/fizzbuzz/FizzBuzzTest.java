@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FizzBuzzTest {
     private static final String FIZZ = "Fizz";
+    private static final String BUZZ = "Buzz";
     private int num;
 
     @BeforeEach
@@ -19,6 +20,15 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals(FIZZ, fizzBuzz.sortOrderNumber(num));
     }
+
+    @Test
+    public void test_when_number_is_a_multiple_of_5() {
+        num = 10;
+
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals(BUZZ, fizzBuzz.sortOrderNumber(num));
+    }
+
 
 }
 
