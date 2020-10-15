@@ -10,7 +10,9 @@ public class FizzBuzz {
         boolean isModulo5 = orderNumber % 5 == 0;
         boolean isModulo7 = orderNumber % 7 == 0;
 
-        
+        if(isModulo3 && isModulo5 && isModulo7){
+            return FIZZ+BUZZ+WHIZZ;
+        }
 
         if(isModulo3 && isModulo5){
             return FIZZ.concat(BUZZ);
