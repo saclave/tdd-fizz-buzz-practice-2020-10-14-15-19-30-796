@@ -7,5 +7,6 @@ public class FizzBuzz {
         if(orderNumber % 3 == 0){
             return FIZZ;
         }
+        return null;
     }
 }

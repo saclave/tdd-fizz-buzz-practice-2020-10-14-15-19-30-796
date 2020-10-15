@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class FizzBuzzTest {
-    private static final String FIZZ = "FIZZ";
+    private static final String FIZZ = "Fizz";
     private int num;
 
     @BeforeEach
@@ -20,7 +20,6 @@ public class FizzBuzzTest {
         assertEquals(FIZZ, fizzBuzz.sortOrderNumber(num));
     }
 
-    @Test
 }
 
 //multiple of 3 Fizz
