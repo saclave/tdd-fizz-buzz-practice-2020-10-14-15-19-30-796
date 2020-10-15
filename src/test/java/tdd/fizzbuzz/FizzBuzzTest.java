@@ -39,7 +39,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void test_when_number_is_a_multiple_of_3_and_7() {
+    public void test_when_number_is_a_multiple_of_3_and_5() {
         num = 15;
 
         FizzBuzz fizzBuzz = new FizzBuzz();
@@ -47,7 +47,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void test_when_number_is_a_multiple_of_3_and_5() {
+    public void test_when_number_is_a_multiple_of_3_and_7() {
         num = 21;
 
         FizzBuzz fizzBuzz = new FizzBuzz();

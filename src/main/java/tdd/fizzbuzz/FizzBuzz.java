@@ -26,6 +26,10 @@ public class FizzBuzz {
             return FIZZ+BUZZ;
         }
 
+        if(isModulo3 && isModulo7){
+            return FIZZ+WHIZZ;
+        }
+
         return null;
     }
 }
