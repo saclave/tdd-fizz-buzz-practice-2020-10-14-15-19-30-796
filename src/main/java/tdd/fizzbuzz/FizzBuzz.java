@@ -18,6 +18,10 @@ public class FizzBuzz {
             return FIZZ.concat(WHIZZ);
         }
 
+        if(isModulo5 && isModulo7){
+            return BUZZ.concat(WHIZZ);
+        }
+
         if(isModulo3){
             return FIZZ;
         }
