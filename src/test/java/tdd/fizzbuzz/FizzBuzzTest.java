@@ -17,7 +17,7 @@ public class FizzBuzzTest {
         num = 3;
 
         FizzBuzz fizzBuzz = new FizzBuzz();
-        assertEquals(FIZZ, fizzBuzz.getOrderNumber(num));
+        assertEquals(FIZZ, fizzBuzz.sortOrderNumber(num));
     }
 
     @Test
